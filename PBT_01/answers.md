@@ -85,7 +85,7 @@ Câu B4:
 ![alt text](<screenshots/Elements_TGĐ.png>)
 
 
-1. Phân tích tab Elements (Cấu trúc HTML)
+1. Phân tích tab Elements 
 
 - a. 3 thẻ semantic HTML5 được trang sử dụng:
 
@@ -93,8 +93,8 @@ Câu B4:
     + `<footer class="footer v2024">`: Nằm ở phần cuối của `<body>`, dùng để chứa các thông tin bản quyền, địa chỉ liên hệ, và các liên kết chính sách của website.
     + `<h1>`: Thẻ tiêu đề chính (ở đây trang dùng class `sc-only` để ẩn đi về mặt hiển thị nhưng vẫn giữ cho mục đích SEO hoặc screen reader).
 
-- b. 2 thẻ KHÔNG dùng đúng semantic (có thể tối ưu hơn):**
-    + <div class="header-top-bar">`: Khối thẻ này chứa các liên kết điều hướng đầu trang. Thay vì dùng `<div>` mang tính chung chung, trang nên sử dụng thẻ `<nav>` để chuẩn semantic hơn cho một thanh điều hướng.
+- b. 2 thẻ không dùng đúng semantic 
+    + `<div class="header-top-bar">`: Khối thẻ này chứa các liên kết điều hướng đầu trang. Thay vì dùng `<div>` mang tính chung chung, trang nên sử dụng thẻ `<nav>` để chuẩn semantic hơn cho một thanh điều hướng.
     + `<div class="body-home">`: Khối này đang đóng vai trò bao bọc toàn bộ nội dung chính của trang chủ. Sẽ chuẩn xác hơn về mặt ngữ nghĩa nếu sử dụng thẻ `<main>`.
 
 2. Phân tích thẻ `<table>`
