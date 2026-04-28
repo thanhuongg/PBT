@@ -82,7 +82,7 @@ Phần B:
 
 Câu B4: 
 
-![alt text](Elements_TGĐ.png)
+![alt text](<screenshots/Elements_TGĐ.png>)
 
 
 1. Phân tích tab Elements (Cấu trúc HTML)
@@ -105,7 +105,7 @@ Câu B4:
 
 3. Phân tích thẻ `<form>`
 
-![alt text](form.png)
+ ![alt text](<screenshots/form.png>)
 
 - Thẻ `<form>` này không có thuộc tính `action` và `method`.                
 - Form này chỉ sử dụng duy nhất một loại là: `<input type="hidden">`.
