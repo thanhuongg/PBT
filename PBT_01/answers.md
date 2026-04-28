@@ -91,7 +91,7 @@ Câu B4:
 
     + `<header class="header v2024...">`: Nằm ở phần đầu của `<body>`, được sử dụng để chứa logo, thanh tìm kiếm và các thành phần điều hướng trên = cùng của trang.
     + `<footer class="footer v2024">`: Nằm ở phần cuối của `<body>`, dùng để chứa các thông tin bản quyền, địa chỉ liên hệ, và các liên kết chính sách của website.
-    + `<h1>`: Thẻ tiêu đề chính (ở đây trang dùng class `sc-only` để ẩn đi về mặt hiển thị nhưng vẫn giữ cho mục đích SEO hoặc screen reader).
+    + `<h1>`: Thẻ tiêu đề chính 
 
 - b. 2 thẻ không dùng đúng semantic 
     + `<div class="header-top-bar">`: Khối thẻ này chứa các liên kết điều hướng đầu trang. Thay vì dùng `<div>` mang tính chung chung, trang nên sử dụng thẻ `<nav>` để chuẩn semantic hơn cho một thanh điều hướng.
