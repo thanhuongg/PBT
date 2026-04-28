@@ -78,4 +78,34 @@ Câu A4:
     + Việc dùng bảng để thiết kế layout trang web chỉ là cách làm cữ của ngày xưa và hiện tại việc này được đánh giá là sai
     + Hiện nay đã có nhứng công cụ chuyên dụng và hiện đại hơn để dàn trang là CSS Grid và Flexbox.
 
+Phần B:
 
+Câu B4: 
+
+![alt text](Elements_TGĐ.png)
+
+
+1. Phân tích tab Elements (Cấu trúc HTML)
+
+- a. 3 thẻ semantic HTML5 được trang sử dụng:
+
+    + `<header class="header v2024...">`: Nằm ở phần đầu của `<body>`, được sử dụng để chứa logo, thanh tìm kiếm và các thành phần điều hướng trên = cùng của trang.
+    + `<footer class="footer v2024">`: Nằm ở phần cuối của `<body>`, dùng để chứa các thông tin bản quyền, địa chỉ liên hệ, và các liên kết chính sách của website.
+    + `<h1>`: Thẻ tiêu đề chính (ở đây trang dùng class `sc-only` để ẩn đi về mặt hiển thị nhưng vẫn giữ cho mục đích SEO hoặc screen reader).
+
+- b. 2 thẻ KHÔNG dùng đúng semantic (có thể tối ưu hơn):**
+    + <div class="header-top-bar">`: Khối thẻ này chứa các liên kết điều hướng đầu trang. Thay vì dùng `<div>` mang tính chung chung, trang nên sử dụng thẻ `<nav>` để chuẩn semantic hơn cho một thanh điều hướng.
+    + `<div class="body-home">`: Khối này đang đóng vai trò bao bọc toàn bộ nội dung chính của trang chủ. Sẽ chuẩn xác hơn về mặt ngữ nghĩa nếu sử dụng thẻ `<main>`.
+
+2. Phân tích thẻ `<table>`
+
+- `<table>` được sử dụng để hiển thị chi tiết "Thông số kỹ thuật/Cấu hình" của sản phẩm
+- Trang có sử dụng thẻ `<tbody>` để nhóm các hàng chứa dữ liệu `<tr>` lại với nhau.
+- Trang không sử dụng thẻ `<thead>`.
+
+3. Phân tích thẻ `<form>`
+
+![alt text](form.png)
+
+- Thẻ `<form>` này không có thuộc tính `action` và `method`.                
+- Form này chỉ sử dụng duy nhất một loại là: `<input type="hidden">`.
