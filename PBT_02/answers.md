@@ -55,3 +55,39 @@ Cách 2: Sử dụng thẻ "figure" bọc "img" và "figcaption"
 Khi nào dùng: Sử dụng khi bức ảnh và dòng chú thích ("figcaption") có mối liên kết ngữ nghĩa chặt chẽ với nhau và tạo thành một khối nội dung độc lập. Nếu cắt toàn bộ khối "figure" này và di chuyển sang một vị trí khác, ý nghĩa của nó vẫn trọn vẹn và không làm đứt gãy luồng thông tin của bài viết chính.    
 Ví dụ thực tế 1: Một biểu đồ/đồ thị số liệu trong một bài báo cáo tài chính, đi kèm dòng chú thích bên dưới (ví dụ: "Biểu đồ 1: Tăng trưởng doanh thu quý 3").   
 Ví dụ thực tế 2: Một bức ảnh báo chí minh họa cho một sự kiện, kèm theo dòng chú thích ghi rõ tên nhiếp ảnh gia, nguồn ảnh và bối cảnh chụp bức ảnh đó.
+
+Phần C:
+
+Lỗi 1: Dòng 2 — Input "Tên" thiếu `<label>` gắn kết trực tiếp và thuộc tính name
+
+Sửa: `<label for="name">Tên:</label> <input type="text" id="name" name="name" required>`
+
+Lỗi 2: Dòng 4 — Email chỉ dùng placeholder thay cho nhãn dán
+
+Sửa: `<label for="email">Email:</label> <input type="email" id="email" name="email" placeholder="Email của bạn" required>`
+
+Lỗi 3: Dòng 6 & 7 — Các ô Password thiếu thuộc tính name và nhãn xác định
+
+Sửa: `<label for="pwd">Mật khẩu:</label> <input type="password" id="pwd" name="password" required>`
+
+Sửa: `<label for="re-pwd">Nhập lại mật khẩu:</label> <input type="password" id="re-pwd" name="re-password" required>`
+
+Lỗi 4: Dòng 9 — Số điện thoại dùng type="text" thay vì type="tel"
+
+Sửa: `<label for="phone">Phone:</label> <input type="tel" id="phone" name="phone" value="0901234567">`
+
+Lỗi 5: Dòng 11 — Thẻ `<select> `thiếu nhãn và thuộc tính name
+
+Sửa: `<label for="city">Thành phố:</label> <select id="city" name="city">...</select>`
+
+Lỗi 6: Dòng 12 & 13 — Các `<option>` thiếu thuộc tính value để gửi dữ liệu về server
+
+Sửa:` <option value="hn">Hà Nội</option> <option value="hcm">TP.HCM</option>`
+
+Lỗi 7: Dòng 16 — Thẻ `<label> `cho checkbox thiếu input type="checkbox" bên trong
+
+Sửa: `<input type="checkbox" id="tos" name="tos" required> <label for="tos">Tôi đồng ý điều khoản</label>`
+
+Lỗi 8: Dòng 20 — Sử dụng` <input type="submit">` thay vì thẻ `<button type="submit">` 
+
+Sửa: `<button type="submit">Gửi</button>`
