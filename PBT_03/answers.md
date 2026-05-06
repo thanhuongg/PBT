@@ -48,3 +48,26 @@ Câu 2:
 
 8. .top-bar.dark h1    → Chọn: ShopTLU
 ![alt text](screenshot/image.png)
+
+câu 4:
+
+1. Tính Specificity Score (a, b, c)
+
+| Rule | Selector | ID (a) | Class (b) | Type (c) | Specificity Score |
+| :--- | :--- | :---: | :---: | :---: | :--- |
+| Rule A| `p` | 0 | 0 | 1 | `(0, 0, 1)`|
+| Rule B| `.price` | 0 | 1 | 0 | `(0, 1, 0)`|
+| Rule C| `#main-price` | 1 | 0 | 0 |`(1, 0, 0)`|
+| Rule D| `p.price` | 0 | 1 | 1 | `(0, 1, 1)`|
+
+2. Element sẽ có màu đỏ.
+
+- Giải thích: Trình duyệt so sánh điểm số từ trái sang phải (ID -> Class -> Type).Rule C có 1 ID (a=1), trong khi các Rule khác đều có a=0. Vì ID có trọng số cao nhất trong các bộ chọn CSS, nên Rule C sẽ chiến thắng bất kể các rule khác có bao nhiêu Class hay Tag đi chăng nữa.
+
+3. Element sẽ có màu cam.
+
+- Giải thích: Inline style có độ ưu tiên cao hơn tất cả các bộ chọn nằm trong file CSS bên ngoài hoặc trong thẻ `<style>`. Điểm số của nó có thể coi là (1, 0, 0, 0) nếu tính thêm cột thứ 4 ở phía trước ID.
+
+4. Element sẽ có màu đen.
+
+- Giải thích: Mặc dù Rule A (p) có specificity thấp nhất (0, 0, 1), nhưng từ khóa !important không thuộc về thang đo specificity thông thường.!important là một "phá vỡ quy tắc". Khi được sử dụng, nó sẽ ghi đè lên tất cả các khai báo khác, bao gồm cả ID selector và thậm chí là Inline style.
