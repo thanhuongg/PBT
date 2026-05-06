@@ -57,6 +57,7 @@ Ví dụ thực tế 1: Một biểu đồ/đồ thị số liệu trong một b
 Ví dụ thực tế 2: Một bức ảnh báo chí minh họa cho một sự kiện, kèm theo dòng chú thích ghi rõ tên nhiếp ảnh gia, nguồn ảnh và bối cảnh chụp bức ảnh đó.
 
 Phần C:
+Câu 1:
 
 Lỗi 1: Dòng 2 — Input "Tên" thiếu `<label>` gắn kết trực tiếp và thuộc tính name
 
