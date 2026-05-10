@@ -49,6 +49,66 @@ Câu 2:
 8. .top-bar.dark h1    → Chọn: ShopTLU
 ![alt text](screenshot/image.png)
 
+
+
+Câu 3:
+
+#### Trường hợp 1: `content-box` (mặc định)
+
+```css
+.box-1 {
+    width: 400px;    
+    padding: 20px;    
+    border: 5px solid;
+    margin: 10px; 
+}
+```
+
+```
+Chiều rộng hiển thị  = width + padding×2 + border×2
+                     = 400 + 40 + 10
+                    = 450px
+
+Không gian chiếm trên trang = visible width + margin×2
+                            = 450 + 20
+                            = 470px
+```
+
+#### Trường hợp 2: `border-box`
+
+```css
+.box-2 {
+    box-sizing: border-box;
+    width: 400px;    
+    padding: 20px;
+    border: 5px solid;
+    margin: 10px;
+}
+```
+
+```
+Chiều rộng hiển thị = 400px 
+
+Kích thước content thực tế  = 400 - padding×2 - border×2
+                             = 400 - 40 - 10
+                             = 350px
+
+Không gian chiếm trên trang = 400 + margin×2
+                             = 400 + 20
+                             = 420px
+```
+
+#### Trường hợp 3: Margin Collapse
+
+```css
+.box-a { margin-bottom: 25px; }
+.box-b { margin-top: 40px; }
+```
+
+```
+Khoảng cách giữa box-a và box-b = 40px
+```
+
 câu 4:
 
 1. Tính Specificity Score (a, b, c)
