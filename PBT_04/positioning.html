@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>B1</title>
+  <link rel="stylesheet" href="positioning.css">
+</head>
+<body>
+
+  <header class="fixed-header">
+    <div class="header-inner">
+      <a class="logo" href="#">🛍️ ShopTLU</a>
+      <nav class="header-nav">
+        <a href="#">Trang chủ</a>
+        <a href="#">Sản phẩm</a>
+        <a href="#">Khuyến mãi</a>
+        <a href="#">Liên hệ</a>
+      </nav>
+    </div>
+  </header>
+  <div class="page-wrapper">
+
+    <aside class="sticky-sidebar">
+      <h3>Danh mục</h3>
+      <ul class="sidebar-menu">
+        <li><a href="#">📱 Điện thoại</a></li>
+        <li><a href="#">💻 Laptop</a></li>
+        <li><a href="#">🎧 Tai nghe</a></li>
+        <li><a href="#">⌚ Đồng hồ</a></li>
+        <li><a href="#">📷 Máy ảnh</a></li>
+        <li><a href="#">🖨️ Máy in</a></li>
+        <li><a href="#">🖱️ Phụ kiện</a></li>
+      </ul>
+
+      <h3 style="margin-top:20px">Lọc giá</h3>
+      <ul class="sidebar-menu">
+        <li><a href="#">Dưới 1 triệu</a></li>
+        <li><a href="#">1 - 5 triệu</a></li>
+        <li><a href="#">5 - 15 triệu</a></li>
+        <li><a href="#">Trên 15 triệu</a></li>
+      </ul>
+    </aside>
+    <main class="main-content">
+
+      <h1 class="page-title">Sản phẩm nổi bật</h1>
+      <p class="page-subtitle">Scroll xuống để test sticky header và fixed chat button</p>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <span class="badge badge--hot">HOT</span>
+          <div class="card-img">📱</div>
+          <div class="card-body">
+            <h3>iPhone 16 Pro Max</h3>
+            <p class="price">29.990.000đ</p>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge badge--new">NEW</span>
+          <div class="card-img">💻</div>
+          <div class="card-body">
+            <h3>MacBook Air M3</h3>
+            <p class="price">28.990.000đ</p>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge badge--sale">-20%</span>
+          <div class="card-img">🎧</div>
+          <div class="card-body">
+            <h3>AirPods Pro 2</h3>
+            <p class="price">6.990.000đ</p>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge badge--hot">HOT</span>
+          <div class="card-img">⌚</div>
+          <div class="card-body">
+            <h3>Apple Watch Series 9</h3>
+            <p class="price">10.990.000đ</p>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <div class="card-img">📷</div>
+          <div class="card-body">
+            <h3>Sony Alpha A7 IV</h3>
+            <p class="price">65.990.000đ</p>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+        <div class="product-card">
+          <span class="badge badge--sale">-15%</span>
+          <div class="card-img">🖥️</div>
+          <div class="card-body">
+            <h3>Dell UltraSharp 27"</h3>
+            <p class="price">12.500.000đ</p>
+            <button class="btn-buy">Mua ngay</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="spacer-content">
+        <h2>Tại sao chọn ShopTLU?</h2>
+        <p>Scroll xuống để thấy header luôn dính và chat button luôn hiển thị ở góc phải dưới...</p>
+        <div class="feature-list">
+          <div class="feature">🚚 Giao hàng nhanh 2h</div>
+          <div class="feature">🔄 Đổi trả 30 ngày</div>
+          <div class="feature">💳 Thanh toán an toàn</div>
+          <div class="feature">🎁 Quà tặng hấp dẫn</div>
+        </div>
+        <p style="color:#94a3b8;font-size:14px;margin-top:20px">
+        </p>
+      </div>
+
+    </main>
+  </div>
+
+  <button class="scroll-top-btn" onclick="window.scrollTo({top:0, behavior:'smooth'})">↑</button>
+
+  <button class="chat-btn">💬</button>
+
+</body>
+</html>
